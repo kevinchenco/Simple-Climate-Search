@@ -4,23 +4,24 @@
     justify-content: center;
     background: black;
     color: white;
-    width: 300px;
+    width: 250px;
     height: 200px;
-    margin: 3em;
-    border-radius: 50%;
+    margin: 20px;
+    border-radius: 200px;
     position: relative;
   }
+  
   #box:after {
     content: "";
     display: block;
     position: absolute;
-    top: calc(-1 * 5px);
-    left: calc(-1 * 5px);
-    border-radius: 4%;
+    top: calc(-1 * 10px); /* Ajusta el grosor del borde */
+    left: calc(-1 * 10px); /* Ajusta el grosor del borde */
+    border-radius: 4cm;
     z-index: -1;
-    width: calc(100% + ( 5px * 2));
-    height: calc(100% + ( 5px * 2));
-    background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+    width: calc(100% + (10px * 2)); /* Ajusta el grosor del borde */
+    height: calc(100% + (10px * 2)); /* Ajusta el grosor del borde */
+    background: linear-gradient(60deg, #f79533, #e8f355, #f90047, #dd1313, #1d5fe2, #06c5e2, #3cdec9, #8dc0ff);
     animation: animatedgradient 3s ease alternate infinite;
     background-size: 300% 300%;
   }
@@ -36,3 +37,4 @@
       background-position: 0% 50%;
     }
   }
+  

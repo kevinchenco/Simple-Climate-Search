@@ -4,13 +4,24 @@
   <meta charset="UTF-8">
   <title>CodePen - 【CSS】【Item action】虹色の枠線</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-<link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link href="https://fonts.cdnfonts.com/css/passion-one" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
 
 </head>
 <body>
 <!-- partial:index.partial.html -->
-<div class="gradient-border" id="box">Aniddddddmasted<br/>CSS<br/>Gradient Border</div>
+<div class="contenedor">
+<div class="gradient-border" id="box"></div>
 <!-- partial -->
-  
+<p class="animate__animated animate__backInDown" id="titulo" style="font-family: 'Passion One', sans-serif;">CLIMATE</p>  
+<div class="barra-busqueda">
+  <input type="text" placeholder="Buscar...">
+  <button type="submit">Buscar</button>
+</div>
+    <div id="datosClima"></div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>

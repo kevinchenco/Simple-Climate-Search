@@ -1,8 +1,25 @@
+
+.contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10px;
+  font-size: 40px;
+}
+
+.barra-busqueda input[type="text"] {
+  width: 300px; /* Ajusta el ancho según tu preferencia */
+  height: 100%; /* Opcional: para mantener la altura igual al contenedor */
+  font-size: 16px;
+}
+
 #box {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: black;
+    background-image:url('img/logo.png');
+    background-size: cover;
     color: white;
     width: 250px;
     height: 200px;

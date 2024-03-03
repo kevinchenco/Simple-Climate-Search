@@ -5,7 +5,7 @@
   align-items: center;
   flex-direction: column;
   margin-top: 10px;
-  font-size: 40px;
+  font-size: 20px;
 }
 
 .barra-busqueda input[type="text"] {
@@ -55,3 +55,26 @@
     }
   }
   
+/* Estilos para la tabla */
+.tabla-clima {
+  
+  width: 100%;
+  border-collapse: collapse;
+  overflow-x: auto; /* Permitir desplazamiento horizontal en pantallas pequeñas */
+}
+
+/* Estilos para las celdas */
+.tabla-clima th, .tabla-clima td {
+  padding: 8px;
+  text-align: center;
+  border: 1px solid #ddd;
+  
+}
+
+/* Media query para ajustar estilos en pantallas pequeñas */
+@media only screen and (max-width: 500px) {
+  .tabla-clima th, .tabla-clima td {
+    padding: 2px;
+    font-size: 12 px; /* Reducir el tamaño de fuente en pantallas pequeñas */
+  }
+}

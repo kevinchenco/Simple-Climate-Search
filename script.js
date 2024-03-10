@@ -91,3 +91,7 @@ botonBusqueda.addEventListener('click', () => {
 // Llamada inicial para mostrar la tabla (puedes quitar esto si no quieres que se muestre una tabla al cargar la página)
 // mostrarTablaClima();
 
+// This adds some nice ellipsis to the description:
+document.querySelectorAll(".projcard-description").forEach(function(box) {
+	$clamp(box, {clamp: 6});
+});

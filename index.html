@@ -11,17 +11,111 @@
 </head>
 <body>
 <!-- partial:index.partial.html -->
+<div class="table-container">
+<table>
+  <tr>
+    <td>
+      <div class="weather-container sun-border">
+        <div class="weather weather--sun">
+          <div class="icon">
+            <div class="icon__sun">
+              <div class="icon__sun-lights"> 
+              <div class="icon__sun-light"></div>
+              <div class="icon__sun-light"></div>
+              <div class="icon__sun-light"></div>
+              <div class="icon__sun-light"></div>
+              <div class="icon__sun-light"></div>
+              <div class="icon__sun-light"></div>
+              <div class="icon__sun-light"></div>
+              <div class="icon__sun-light"></div>
+              </div>
+            </div>   
+            <div class="icon__cloud ">
+              <div class="icon__cloud-reflect icon__cloud-reflect--1">    
+              </div>
+              <div class="icon__cloud-reflect icon__cloud-reflect--2">   
+              </div>  
+               <svg  class="icon__cloud-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="isolation:isolate" viewbox="0 0 200 500" width="50%"  ><clipPath id="cloud-path"><path d=" M 146.5 293 C 65.644 293 0 227.356 0 146.5 C 0 65.644 65.644 0 146.5 0 C 205.641 0 256.643 35.12 279.772 85.624 C 293.416 79.445 308.559 76 324.5 76 C 384.383 76 433 124.617 433 184.5 C 433 244.383 384.383 293 324.5 293 L 324.5 293 C 324.5 293 324.5 293 324.5 293 L 146.5 293 Z " fill="currentColor"/></clipPath></svg>
+            </div>
+            <div class="icon__cloud-shadow">
+            </div>
+          </div>
+        </div>
+      </div>
+    </td>
+    <td>
+      <div class="box-container">
+        <div class="gradient-border" id="box"></div>
+      </div>
+    </td>
+    <td>
+      <div>
+        <div class="weather weather--snow " >
+          <div class="icon">
+            <div class="icon__snow">
+              <div class="icon__snow-flakes"></div>
+            </div>   
+            <div class="icon__cloud">
+              <div class="icon__cloud-reflect icon__cloud-reflect--1">    
+              </div>
+              <div class="icon__cloud-reflect icon__cloud-reflect--2">   
+              </div>  
+               <svg  class="icon__cloud-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="isolation:isolate" viewbox="0 0 200 500" width="50%"  ><clipPath id="cloud-path"><path d=" M 146.5 293 C 65.644 293 0 227.356 0 146.5 C 0 65.644 65.644 0 146.5 0 C 205.641 0 256.643 35.12 279.772 85.624 C 293.416 79.445 308.559 76 324.5 76 C 384.383 76 433 124.617 433 184.5 C 433 244.383 384.383 293 324.5 293 L 324.5 293 C 324.5 293 324.5 293 324.5 293 L 146.5 293 Z " fill="currentColor"/></clipPath></svg>
+            </div>
+            <div class="icon__cloud-shadow">
+            </div>
+          </div>
+        </div>
+      </div>
+    </td>
+  </tr>
+</table>
+</div>
+
+<div class="box-container">
+  
+  </div>  
+
 <div class="contenedor">
-<div class="gradient-border" id="box"></div>
+
+
+
+  
+
 <!-- partial -->
-<p class="animate__animated animate__backInDown" id="titulo" style="font-family: 'Passion One', sans-serif;">CLIMATE</p>  
+<p class="animate__animated animate__backInDown t-climate" id="titulo" style="font-family: 'Passion One', sans-serif;">CLIMATE</p>  
 <div class="barra-busqueda">
-  <input type="text" id="ciudadEntrada" placeholder="Ingrese una ciudad">
-  <button id="botonBusqueda">Buscar</button>
+  <input type="text" id="ciudadEntrada" placeholder="Enter a capital of the country">
+  <button id="botonBusqueda">Search</button>
 </div>
     <div id="datosClima"></div>
 </div>
+<div class="projcard-container">
+		
+	<div class="projcard projcard-blue">
+		<div class="projcard-innerbox">
+			<img class="projcard-img" src="https://picsum.photos/800/600?image=1041" />
+			<div class="projcard-textbox">
+				<div class="projcard-title">Description</div>
+				<div class="projcard-subtitle"> Simple search engine for climates of capitals of the countries of the world</div>
+				<div class="projcard-bar"></div>
+				<div class="projcard-description">The API's used to consult the climatological data is.  
+          <a href="https://api.openweathermap.org/data/2.5/weather" class="api-link">https://<span style="color: red;">api.openweathermap.org</span>.com</a>
+          and the api to consult the country data corresponding to the capital is <a href="https://restcountries.com/v3.1/capital" class="api-link">https://<span style="color: red;">restcountries.com</span>.com</a>  
+        </div>
+				<div class="projcard-tagbox">
+					<span class="projcard-tag">JAVASCRIPT</span>
+					<span class="projcard-tag">CSS</span>
+					<span class="projcard-tag">API</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	
 
+
+	
+</div>
 <script src="script.js"></script>
 </body>
 </html>
